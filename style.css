@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.inc-dec {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inc-dec .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inc-dec .container .inc-btn,
+.dec-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.23s linear;
+  color: wheat;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.inc-dec .container .inc-btn:hover,
+.dec-btn:hover {
+  opacity: 0.7;
+}
+.inc-dec .container .user-input {
+  width: 150px;
+  height: 60px;
+  font-size: 2rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  text-align: center;
+  margin: 0 2rem;
+  font-weight: bold;
+}
+input.user-input::-webkit-outer-spin-button,
+input.user-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input.user-input[type="number"] {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+/* task-2 */
+.bg-change {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(53, 69, 29);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-change .bg-change-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+  width: 150px;
+  height: 60px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 23s linear;
+
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+}
+.bg-change .bg-change-btn:hover {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.show-pass {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ed5846;
+}
+.show-pass .container {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 260px;
+  height: 50px;
+  line-height: 50px;
+
+  display: flex;
+  align-items: center;
+}
+.show-pass input {
+  flex: 1;
+  height: 100%;
+  background: transparent;
+  padding: 0 1rem;
+  color: white;
+  font-size: 1.7rem;
+  transition: all 0.23s linear;
+
+  border: none;
+  outline: none;
+}
+.show-pass .eye-btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transition: all 0.23s linear;
+}
+.show-pass .eye-btn i {
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  padding: 0 1rem;
+}
+/* Task Four */
+.slider {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.slider .range-slider {
+  width: 200px;
+  color: black;
+}
+input.range-slider[type="range"]::-moz-range-track {
+  background-color: #9a905d;
+}
+input.range-slider[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: #434343;
+}
+.slider .slide-value {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
